@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mercatto Interno</title>
+</head>
+<body>
+
+<h1>Mercatto Interno</h1>
+
+<h2>Pedidos</h2>
+<button onclick="loadPedidos()">Carregar</button>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Filial</th>
+      <th>Total</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody id="tb"></tbody>
+</table>
+
+<hr>
+
+<h2>Relatório</h2>
+<input type="date" id="ini">
+<input type="date" id="fim">
+<button onclick="gerarRelatorio()">Gerar</button>
+
+<div id="rel"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="api.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
